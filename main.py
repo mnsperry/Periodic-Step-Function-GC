@@ -109,10 +109,10 @@ HTML_TEMPLATE = """
             <label class="label">Function (in variable t, use SymPy syntax):</label><br>
             <input type="text" name="function" required value="{{ func }}"><br><br>
 
-            <label class="label">Time Interval (e.g., 1.0):</label><br>
+            <label class="label">Time Gap between repetitions:</label><br>
             <input type="text" name="time_interval" required value="{{ time_interval }}"><br><br>
 
-            <label class="label">Number of Intervals (e.g., 5):</label><br>
+            <label class="label">Number of repetitions:</label><br>
             <input type="text" name="num_intervals" required value="{{ num_intervals }}"><br><br>
 
             <input type="submit" value="Plot">
@@ -156,4 +156,3 @@ def serve_plot():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
-
